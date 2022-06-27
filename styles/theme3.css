@@ -1,0 +1,48 @@
+.theme3{
+    background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
+}
+
+.theme3 .toggler-btn{
+    background-color: hsl(268, 71%, 12%);
+    justify-content: flex-end;
+}
+.theme3 .circle{
+    background-color: hsl(176, 100%, 44%);
+}
+
+
+.theme3 .display{
+    background-color: hsl(268, 71%, 12%);
+}
+
+.theme3 .btn-container{
+    background-color: hsl(268, 71%, 12%);
+}
+
+.theme3 .btn-container>button{
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0 2px 0 hsl(290, 70%, 36%);
+}
+.theme3 .btn-container>button:hover{
+    background-color: hsl(266, 100%, 60%);
+}
+
+.theme3 button.delbtn, .theme3 button.resetbtn{
+    color: white;
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0 2px 0 hsl(285, 91%, 52%);
+}
+.theme3 button.equalbtn{
+    color: black;
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0 2px 0 hsl(177, 92%, 70%);
+}
+
+.theme3 button.delbtn:hover, .theme3 button.resetbtn:hover{
+    background-color: hsl(266, 100%, 65%);
+}
+.theme3 button.equalbtn:hover{
+    background-color: hsl(176, 91%, 79%);
+}

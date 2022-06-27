@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600;700&display=swap');
+html{
+    font-size: 16px;
+}
+*{
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 1s ease;
+}
+.calculator{
+    transition: all 0.5s ease;
+}
+.headings{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+.logo{
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 0.4;
+}
+.theme{
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    margin-right: 20px;
+    font-weight: 600;
+}
+.toggler-container{
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.toggle-numbers{
+    width: 100%;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+.toggler-btn{
+    cursor: pointer;
+    margin-top: 5px;
+    width: 60px;
+    height: 26px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 6px;
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+
+
+.display{
+    min-height: 100px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 0 10px;
+}
+.btn-container{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(5, 40px);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+.span2{
+    grid-column: span 2;
+}
+.btn-container > button{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: hsl(221, 14%, 31%);
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 0 hsl(225, 21%, 49%);
+}
+.btn-container > button.delbtn, .btn-container > button.resetbtn{
+    font-size: 1.2rem;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    .btn-container{
+        grid-template-columns: repeat(4, 65px);
+        grid-template-rows: repeat(5, 50px);
+    }
+    .btn-container{
+        gap: 12px;
+        padding: 12px;
+    }
+    .btn-container > button{
+        font-size: 1.8rem;
+    }
+}
